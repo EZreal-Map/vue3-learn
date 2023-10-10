@@ -6,6 +6,11 @@ const userStore = useUserStore()
 
 <template>
   <div>
+    <router-view></router-view>
+    <hr />
+    <hr />
+    <hr />
+    <hr />
     <el-button type="primary">{{ userStore.token }}</el-button>
     <el-button type="success" @click="userStore.setToken('hello')"
       >Success</el-button
